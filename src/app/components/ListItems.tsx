@@ -13,7 +13,7 @@ const ListItems = ({todo,setTodo}: List) => {
         setTodo(prev=> prev.filter(list=> list.id !== id))
       }
 
-  return todo.map((list, index) => (
+  return todo.map((list) => (
     <div key={list.id}>
       <h4>{list.title}</h4>
       <Button onClick={()=> handleDelete(list.id)}>DELETE</Button>

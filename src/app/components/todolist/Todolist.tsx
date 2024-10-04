@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Input from "./Input";
 import Button from "./Button";
-import { type Todo } from "../types/utils";
+import { type Todo } from "../../types/utils";
 import ListItems from "./ListItems";
 
 const Todolist = () => {
@@ -19,13 +19,13 @@ const Todolist = () => {
 
   return (
     <div>
-      <div>
+      <div className="text-center border bg-black p-2 rounded-2xl text-white my-2">
         <h2>TODO LIST</h2>
       </div>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form className="flex" onSubmit={handleSubmit}>
           <Input input={input} setInput={setInput} />
-          <Button>ADD</Button>
+          <Button className="flex justify-center border  rounded-xl border-green-900 ml-2 p-2 bg-green-700">ADD</Button>
         </form>
         <div>
           <ListItems todo={todo} setTodo={setTodo} />

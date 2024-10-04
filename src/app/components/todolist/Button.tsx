@@ -3,11 +3,12 @@ import React from 'react'
 type Button = {
     children: JSX.Element | string;
     onClick?:()=> void;
+    className?: string;
 }
 
-const Button = ({children,onClick}: Button) => {
+const Button = ({children,onClick,className}: Button) => {
   return (
-    <div>
+    <div className={className}>
       <button onClick={onClick}>{children}</button>
     </div>
   )

@@ -47,11 +47,11 @@ const Calendar: React.FC = () => {
         &#x276E;
       </button>
       <div className="text-lg font-medium flex space-x-2">
-        {/* Month Picker */}
+        
         <div className="cursor-pointer" onClick={() => setMonthPickerOpen(!isMonthPickerOpen)}>
           {format(currentMonth, "MMMM")}
         </div>
-        {/* Year Picker */}
+        
         <div className="cursor-pointer" onClick={() => setYearPickerOpen(!isYearPickerOpen)}>
           {format(currentMonth, "yyyy")}
         </div>
@@ -60,7 +60,7 @@ const Calendar: React.FC = () => {
         &#x276F;
       </button>
 
-      {/* Month dropdown */}
+      
       {isMonthPickerOpen && (
         <div className="absolute top-10 left-1/2 transform -translate-x-1/2 bg-white shadow-md p-2 rounded-lg">
           {months.map((month, index) => (
@@ -75,7 +75,7 @@ const Calendar: React.FC = () => {
         </div>
       )}
 
-      {/* Year dropdown */}
+      
       {isYearPickerOpen && (
         <div className="absolute top-10 left-1/2 transform -translate-x-1/2 bg-white shadow-md p-2 rounded-lg">
           {years.map((year) => (
@@ -153,7 +153,7 @@ const Calendar: React.FC = () => {
   };
 
   return (
-    <div className="w-80 bg-white p-5 shadow-md rounded-lg">
+    <div className="w-80 bg-white p-5  rounded-lg">
       {renderHeader()}
       {renderDays()}
       {renderCells()}

@@ -73,12 +73,12 @@ const MonthCalendar: React.FC = () => {
       </div>
 
       {/* Calendar Grid */}
-      <div className="grid grid-cols-7 gap-[1px] border-t border-gray-300 bg-gray-100">
+      <div className="grid grid-cols-7  border-t border-gray-300 bg-gray-100">
         {/* Days of the week */}
         {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day, index) => (
           <div
             key={index}
-            className="text-center p-2 bg-gray-100 text-gray-600 font-semibold"
+            className="text-center p-1 bg-gray-100 text-gray-600 font-semibold"
           >
             {day}
           </div>

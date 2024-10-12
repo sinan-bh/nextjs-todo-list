@@ -12,7 +12,7 @@ export default function Home() {
           {/* <DayCalendar />
           <Calender /> */}
           {/* <WeekCalendar /> */}
-          {/* <MonthCalendar /> */}
+          <MonthCalendar />
           <RightSideBar />
         </div>
       </main>
